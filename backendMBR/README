@@ -1,0 +1,16 @@
+# Para Rodar o Servidor de Backend
+
+Copiar o arquivo .env.example para .env mantendo o original e preenchendo o .env com os dados do banco
+
+# Rodar os comandos abaixo:
+## Baixar as bibliotecas do node
+npm install
+
+## Gerar tabelas no banco
+knex migrate:latest
+
+## Gerar registros iniciais
+knex seed:run
+
+## Iniciar o servidor
+npm run start

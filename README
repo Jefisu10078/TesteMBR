@@ -1,0 +1,32 @@
+# O Backend se encontra na pasta "backendMBR"
+
+# Para Rodar o Servidor de Backend
+
+Copiar o arquivo .env.example para .env mantendo o original e preenchendo o .env com os dados do banco
+
+# Rodar os comandos abaixo:
+## Baixar as bibliotecas do node
+npm install
+
+## Gerar tabelas no banco
+knex migrate:latest
+
+## Gerar registros iniciais
+knex seed:run
+
+## Iniciar o servidor
+npm run start
+
+# O Frontend se encontra na pasta "TesteMBR"
+
+# Para rodar a aplicação de Frontend
+npm install
+
+# Inciar o front
+npm run dev
+
+# Para executar as perguntas
+Existe um usuário teste gravado no banco, com o nome de "Aluno 1" e irá carregar automaticamente o RA deste aluno. Não é obrigatório utilizar este usuário, você pode criar um novo usuário, e o mesmo será salvo no banco de dados.
+
+# livro e serie utilizado para o teste
+O livro utilizado é o de Português, e a série é o 1º ano.
