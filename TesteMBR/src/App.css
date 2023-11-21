@@ -185,3 +185,14 @@ h3 {
   margin: 20px;
   
 }
+
+/*Logo*/
+
+.logo-MBR {
+  width: 230px;
+  height: 100px;
+  display: grid;
+  place-items: center;
+  margin-left: 3.4rem;
+  margin-top: 2rem;
+}

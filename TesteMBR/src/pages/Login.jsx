@@ -1,6 +1,7 @@
 import React,{useEffect,useState} from 'react'
 import api from '../services/api'
 import { useNavigate } from 'react-router-dom'
+import Logo from '../assets/mbr.png'
 
 const Login = () => {
 
@@ -71,7 +72,9 @@ const Login = () => {
     <div className="wrapper">
     <form action="">
       <h1>Teste idiomas</h1>
-      
+      <div>
+      <img  className='logo-MBR' src={Logo} alt="Logo" />
+      </div>
       <div className="input-box">
         <input onKeyUp={(e)=>{existeAluno(e.target.value)}} type="text" placeholder="Nome do aluno" required></input>
       </div>
